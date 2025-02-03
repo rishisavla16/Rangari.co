@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  position: fixed; /* Make the navbar stick to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays above other content */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 23px;
+  letter-spacing: 1.5px;
+  font-weight: 200;
+}
+.navbar-link:hover {
+opacity: 70%;
+}
+
+/* body styling */
+
+body {
+  padding-top: 5rem !important; /* Add padding to body to account for fixed navbar */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  min-height: 100vh;
+  background-color: #333;
+}
+
+.contact-container {
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 44px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin: 20px 0;
+  text-decoration: none;
+  color: #c0c0c0;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+.contact-link:hover {
+opacity: 70%;}
+
+.contact-link img {
+  width: 20px; /* Even smaller icons for smaller screens */
+  height: 20px;
+  margin-right: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 22px; /* Slightly smaller heading for smaller screens */
+  }
+
+  .contact-link {
+      font-size: 16px; /* Smaller font size for links on small screens */
+  }
+
+  .contact-link img {
+      width: 18px; /* Even smaller icons for smaller screens */
+      height: 18px;
+  }
+
+  .contact-container {
+      padding: 20px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+      font-size: 20px; /* Even smaller heading for very small screens */
+  }
+
+  .contact-link {
+      font-size: 14px; /* Smaller font size for very small screens */
+  }
+
+  .contact-link img {
+      width: 16px; /* Even smaller icons for very small screens */
+      height: 16px;
+  }
+}
+
+
+h1{
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: white;
+  margin: 0px !important;
+}
+
+.cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.copy{
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0px;
+  left: 0%;
+  }
+
+  .copy p{
+    color: #969696;
+    font-size: 12px;
+  }

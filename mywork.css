@@ -1,0 +1,246 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  position: fixed; /* Make the navbar stick to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays above other content */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  gap: 1.5rem; /* Space between links */
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 23px;
+  letter-spacing: 1.5px;
+  font-weight: 200;
+}
+
+.navbar-link:hover {
+opacity: 70%; /* Change color on hover */
+}
+
+/* Body Padding to Avoid Navbar Overlap */
+body {
+  padding-top: 5rem !important; /* Add padding to body to account for fixed navbar */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #333;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.card {
+  width: 18rem;
+  height: 12rem;
+  overflow: hidden;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  position: relative; /* Ensure text is positioned relative to the card */
+  z-index: 2;
+
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text {
+  position: absolute; /* Position text at the bottom of the card */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem;
+  /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background for better readability */
+  color: white;
+  text-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 1);
+  text-align: center;
+  font-size: 1rem;
+  transition: transform 0.3s ease; /* Ensure text scales with the card */
+}
+
+.card:hover, .card-text {
+  transform: scale(1.2); /* Scale text along with the card */
+  z-index: 200;
+}
+
+/* Carousel Popup Styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup .close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.875rem;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  /* max-width: 800px; */
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide overflow to ensure only one image is visible */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner img {
+  width: 100%; /* Ensure each image takes up the full width of the carousel */
+  height: 100%; /* Ensure each image takes up the full height of the carousel */
+  object-fit: contain; /* Ensure the image fits perfectly without cropping */
+  border-radius: 0.625rem;
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  padding: 0.625rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+opacity: 60%;
+}
+
+.carousel-prev {
+  left: 0.625rem;
+}
+
+.carousel-next {
+  right: 0.625rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar-link {
+    font-size: 1.3rem;
+  }
+
+  .card {
+    width: 18rem;
+    height: 12rem;
+  }
+
+  .carousel {
+    width: 95%;
+    height: 90vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    gap: 1rem;
+  }
+
+  .navbar-link {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 12rem;
+    height: 8rem;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .popup .close {
+    top: 0.625rem;
+    right: 0.9375rem;
+    font-size: 2rem;
+  }
+}
+
+h1{
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: white;
+  margin: 0px !important;
+}
+
+
+.copy{
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0px;
+  left: 0%;
+  z-index: 1;
+  }
+
+  .copy p{
+    color: #969696;
+    font-size: 12px;
+  }
