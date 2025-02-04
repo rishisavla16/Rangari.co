@@ -5,43 +5,59 @@
   align-items: center;
   background-color: #333;
   padding: 1rem 2rem;
-  position: fixed; /* Make the navbar stick to the top */
+  position: fixed;
+  /* Make the navbar stick to the top */
   top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Ensure the navbar stays above other content */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 85% !important;
+  z-index: 1000;
+  /* Ensure the navbar stays above other content */
+  box-sizing: border-box;
+  /* Include padding and border in the element's total width and height */
 }
 
 .navbar-left,
 .navbar-right {
   display: flex;
-  gap: 1.5rem; /* Space between links */
+  gap: 1.5rem;
+  /* Space between links */
 }
 
 .navbar-link {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 23px;
-  letter-spacing: 1.5px;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
   font-weight: 200;
 }
 
 .navbar-link:hover {
-opacity: 70%; /* Change color on hover */
+  opacity: 70%;
+  /* Change color on hover */
 }
+
+h1 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 550;
+  letter-spacing: 0.1rem;
+  color: white;
+  margin: 0px !important;
+}
+
 
 /* Body Padding to Avoid Navbar Overlap */
 body {
-  padding-top: 5rem !important; /* Add padding to body to account for fixed navbar */
+  padding-top: 4rem !important;
+  /* Add padding to body to account for fixed navbar */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 10vh;
+  min-width: 1rem;
   background-color: #333;
 }
 
@@ -52,6 +68,7 @@ body {
   gap: 1.25rem;
   justify-content: center;
   padding: 1.25rem;
+  flex: 1;
 }
 
 .card {
@@ -60,11 +77,11 @@ body {
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
   cursor: pointer;
-  position: relative; /* Ensure text is positioned relative to the card */
+  position: relative;
   z-index: 2;
-
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .card img {
@@ -74,21 +91,21 @@ body {
 }
 
 .card-text {
-  position: absolute; /* Position text at the bottom of the card */
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 0.5rem;
-  /* background-color: rgba(0, 0, 0, 0.7); Semi-transparent background for better readability */
   color: white;
   text-shadow: 0rem 0rem 0.2rem rgba(0, 0, 0, 1);
   text-align: center;
   font-size: 1rem;
-  transition: transform 0.3s ease; /* Ensure text scales with the card */
+  transition: transform 0.5s ease;
 }
 
-.card:hover, .card-text {
-  transform: scale(1.2); /* Scale text along with the card */
+.card:hover,
+.card-text {
+  transform: scale(1.1) rotate(-5deg);
   z-index: 200;
 }
 
@@ -124,22 +141,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Hide overflow to ensure only one image is visible */
+  overflow: hidden;
+  /* Hide overflow to ensure only one image is visible */
 }
 
 .carousel-inner {
   display: flex;
-  transition: transform 0.5s ease;
-  width: 100%;
+  transition: transform 0.6s cubic-bezier(0.20, 0.20, 0.20, 0.94); /* Smoother timing function */
   height: 100%;
+  will-change: transform;
 }
 
 .carousel-inner img {
-  width: 100%; /* Ensure each image takes up the full width of the carousel */
-  height: 100%; /* Ensure each image takes up the full height of the carousel */
-  object-fit: contain; /* Ensure the image fits perfectly without cropping */
+  width: 100%;
+  /* Ensure each image takes up the full width of the carousel */
+  height: 100%;
+  /* Ensure each image takes up the full height of the carousel */
+  object-fit: contain;
+  /* Ensure the image fits perfectly without cropping */
   border-radius: 0.625rem;
-  flex-shrink: 0; /* Prevent images from shrinking */
+  flex-shrink: 0;
+  /* Prevent images from shrinking */
 }
 
 .carousel-prev,
@@ -157,7 +179,7 @@ body {
 
 .carousel-prev:hover,
 .carousel-next:hover {
-opacity: 60%;
+  opacity: 60%;
 }
 
 .carousel-prev {
@@ -175,7 +197,11 @@ opacity: 60%;
   }
 
   .navbar-link {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
   }
 
   .card {
@@ -185,14 +211,12 @@ opacity: 60%;
 
   .carousel {
     width: 95%;
-    height: 90vh;
+    height: 100vh;
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
     padding: 0.5rem;
   }
 
@@ -202,12 +226,16 @@ opacity: 60%;
   }
 
   .navbar-link {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
   }
 
   .card {
-    width: 12rem;
-    height: 8rem;
+    width: 95%;
+    height: auto;
   }
 
   .carousel {
@@ -222,25 +250,100 @@ opacity: 60%;
   }
 }
 
-h1{
-  font-family: Montserrat;
-  font-size: 50px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  color: white;
-  margin: 0px !important;
+/* Card Text Animation */
+.card-text {
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
+.card:hover .card-text {
+  transform: translateY(0);
+  opacity: 1;
 
-.copy{
-  padding: 0.5rem;
-  position: fixed;
-  bottom: 0px;
-  left: 0%;
-  z-index: 1;
-  }
+}
 
-  .copy p{
-    color: #969696;
-    font-size: 12px;
-  }
+/* Carousel Popup Entrance Animation */
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Carousel Image Transition */
+.carousel-inner {
+  transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  /* Custom easing for smooth sliding */
+}
+
+/* Smooth Scroll Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button Hover Animation */
+.carousel-prev,
+.carousel-next {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Unique Close Button Animation */
+.close {
+  transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.close:hover {
+  transform: rotate(90deg);
+  color: #ff6347;
+}
+
+.car-text {
+  position: absolute;
+  top: -0.1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  z-index: 1000;
+  font-family: Monteserrat;
+}
+
+.carousel-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  z-index: 1001;
+  pointer-events: none;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Dark background */
+  padding: 1rem 0; /* Padding for spacing */
+  margin: 1rem 0;
+  text-align: center; /* Center-align the text */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  width: 100%;
+  top: 100%;
+  position: absolute;
+}
+
+.footer-text {
+  font-size: 10px; /* Adjust font size */
+  color: #949494; /* Light text color */
+}

@@ -13,8 +13,7 @@
   padding: 1rem 2rem;
   position: fixed; /* Make the navbar stick to the top */
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 85% !important;
   z-index: 1000; /* Ensure the navbar stays above other content */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
@@ -22,20 +21,29 @@
 .navbar-left,
 .navbar-right {
   display: flex;
-  gap: 2rem; /* Space between links */
+  gap: 1rem; /* Space between links */
 }
 
 .navbar-link {
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 23px;
-  letter-spacing: 1.5px;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
   font-weight: 200;
 }
 
 .navbar-link:hover {
 opacity: 70%;
+}
+
+
+h1{
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 550;
+  letter-spacing: 0.1rem;
+  color: white;
 }
 
 /* body styling */
@@ -49,7 +57,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 10vh;
   background-color: #333;
 }
 
@@ -58,13 +66,17 @@ body {
   width: 90%; /* Use a percentage for width */
   max-height: 80vh;
   overflow: hidden;
-  aspect-ratio: 3 / 2; /* Fixed 3:2 aspect ratio */
+  aspect-ratio: 3 / 2;
+  transition: opacity 0.8s ease-out;
+
 }
 
 .carousel-inner {
   display: flex;
-  transition: transform 0.5s ease-in-out;
   height: 100%; /* Ensure the inner container takes full height */
+  transform: translateX(0) scale(0.95);
+  opacity: 100;
+  transition: all 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .carousel-item {
@@ -74,6 +86,8 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%; /* Ensure the item takes full height */
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .carousel-item img {
@@ -88,7 +102,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.0); /* Semi-transparent background */
+  background-color: #333;
   color: white;
   border: none;
   padding: 10px;
@@ -100,7 +114,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.8;
 }
 
 .carousel-button:hover {
@@ -121,25 +136,27 @@ body {
     padding: 1rem;
   }
 
+  h1{
+    font-size: 1.6rem;
+  }
+
   .navbar-link {
-    font-size: 1.3rem;
+    font-size: 0.9rem;
   }
 
   .carousel {
     width: 95%;
-    height: 80vh;
+    height: 100vh;
   }
 }
 
+
 @media (max-width: 480px) {
   .carousel {
-      width: 100%; /* Full width on very small screens */
-      border: none; /* Optional: Remove border on small screens */
-      box-shadow: none; /* Optional: Remove shadow on small screens */
+    width: 95%;
+    height: 100vh;
   }
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
     padding: 0.5rem;
   }
 
@@ -149,27 +166,47 @@ body {
   }
 
   .navbar-link {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  h1{
+    font-size: 1.2rem;
   }
 }
 
-h1{
-  font-family: Montserrat;
-  font-size: 50px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  color: white;
-  margin: 0px !important;
+  .progress-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #333;
 }
 
-.copy{
-  padding: 0.5rem;
-  position: fixed;
-  bottom: 0px;
-  left: 0%;
-  }
+.progress-bar {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #000000, #ffffff);
+    transform-origin: left;
+}
 
-  .copy p{
-    color: #969696;
-    font-size: 12px;
-  }
+@keyframes progress {
+    0% { transform: scaleX(0) }
+    100% { transform: scaleX(1) }
+}
+
+.footer {
+  background-color: #333; /* Dark background */
+  padding: 1rem 0; /* Padding for spacing */
+  margin: 1rem 0;
+  text-align: center; /* Center-align the text */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  width: 100%;
+  top: 90%;
+  position: absolute;
+}
+
+.footer-text {
+  font-size: 10px; /* Adjust font size */
+  color: #949494; /* Light text color */
+}

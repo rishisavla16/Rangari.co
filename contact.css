@@ -13,8 +13,7 @@
   padding: 1rem 2rem;
   position: fixed; /* Make the navbar stick to the top */
   top: 0;
-  left: 0;
-  width: 100%;
+  width: 85% !important;
   z-index: 1000; /* Ensure the navbar stays above other content */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
@@ -29,25 +28,36 @@
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 23px;
-  letter-spacing: 1.5px;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
   font-weight: 200;
 }
 .navbar-link:hover {
 opacity: 70%;
 }
 
+h1{
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: white;
+  margin: 0px !important;
+}
+
+
 /* body styling */
 
 body {
-  padding-top: 5rem !important; /* Add padding to body to account for fixed navbar */
+  padding-top: 2rem !important; /* Add padding to body to account for fixed navbar */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: top;
-  min-height: 100vh;
+  align-items: center;
+  min-height: 10vh;
   background-color: #333;
 }
 
@@ -59,13 +69,7 @@ body {
   width: 100%;
 }
 
-h2 {
-  font-size: 44px;
-  color: #ffffff;
-  margin-bottom: 40px;
-}
-
-.contact-link {
+.contact-link, .no{
   display: flex;
   align-items: left;
   justify-content: left;
@@ -73,26 +77,37 @@ h2 {
   text-decoration: none;
   color: #c0c0c0;
   letter-spacing: 0.5px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .contact-link:hover {
-opacity: 70%;}
+opacity: 70%;
+cursor: pointer;
+}
 
-.contact-link img {
-  width: 20px; /* Even smaller icons for smaller screens */
-  height: 20px;
+.contact-link img, .no img {
+  width: 16px; /* Even smaller icons for smaller screens */
+  height: 16px;
   margin-right: 15px;
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
-  h1 {
-      font-size: 22px; /* Slightly smaller heading for smaller screens */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  h1{
+    font-size: 1.6rem;
+  }
+
+  .navbar-link {
+    font-size: 0.9rem;
   }
 
   .contact-link {
-      font-size: 16px; /* Smaller font size for links on small screens */
+      font-size: 12px; /* Smaller font size for links on small screens */
   }
 
   .contact-link img {
@@ -105,30 +120,35 @@ opacity: 70%;}
   }
 }
 
-@media (max-width: 400px) {
-  h1 {
-      font-size: 20px; /* Even smaller heading for very small screens */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 0.5rem;
   }
 
   .contact-link {
-      font-size: 14px; /* Smaller font size for very small screens */
+      font-size: 12px; /* Smaller font size for very small screens */
   }
 
   .contact-link img {
-      width: 16px; /* Even smaller icons for very small screens */
-      height: 16px;
+      width: 14px; /* Even smaller icons for very small screens */
+      height: 14px;
+  }
+
+  h1{
+    font-size: 1.2rem;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    gap: 1rem;
+  }
+
+  .navbar-link {
+    font-size: 0.8rem;
   }
 }
 
-
-h1{
-  font-family: Montserrat;
-  font-size: 50px;
-  font-weight: 600;
-  letter-spacing: 4px;
-  color: white;
-  margin: 0px !important;
-}
 
 .cont{
   display: flex;
@@ -136,15 +156,17 @@ h1{
   justify-content: space-between;
 }
 
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Dark background */
+  padding: 1rem 0; /* Padding for spacing */
+  text-align: center; /* Center-align the text */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  top: 95%;
+  position: absolute;
+}
 
-.copy{
-  padding: 0.5rem;
-  position: fixed;
-  bottom: 0px;
-  left: 0%;
-  }
-
-  .copy p{
-    color: #969696;
-    font-size: 12px;
-  }
+.footer-text {
+  font-size: 10px; /* Adjust font size */
+  color: #949494; /* Light text color */
+}
