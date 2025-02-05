@@ -1,0 +1,14 @@
+{
+  "cSpell.useGitignore": false,
+  "git.confirmSync": false,
+  "git.confirmEmptyCommits": false,
+  "git.decorations.enabled": false,
+  "git.detectSubmodules": false,
+  "git.enabled": false,
+  "git.enableStatusBarSync": false,
+  "git.optimisticUpdate": false,
+  "git.requireGitUserConfig": false,
+  "git.showCommitInput": false,
+  "git.showInlineOpenFileAction": false,
+  "git.showProgress": false
+}
