@@ -1,30 +1,30 @@
 let currentIndices = {};
 let autoSlideIntervals = {};
-let touchStartX = 0;
+// let touchStartX = 0;
 
 document.addEventListener('DOMContentLoaded', initCarousels);
 
 function initCarousels() {
   document.querySelectorAll('.carousel').forEach(carousel => {
-    carousel.addEventListener('touchstart', handleTouchStart, { passive: true });
-    carousel.addEventListener('touchend', handleTouchEnd, { passive: true });
+    // carousel.addEventListener('touchstart', handleTouchStart, { passive: true });
+    // carousel.addEventListener('touchend', handleTouchEnd, { passive: true });
   });
 }
 
-function handleTouchStart(e) {
-  touchStartX = e.touches[0].clientX;
-}
+// function handleTouchStart(e) {
+//   touchStartX = e.touches[0].clientX;
+// }
 
-function handleTouchEnd(e) {
-  const touchEndX = e.changedTouches[0].clientX;
-  const deltaX = touchEndX - touchStartX;
-  const carousel = e.currentTarget.closest('.popup');
-  const cardId = carousel.id.split('-')[2];
+// function handleTouchEnd(e) {
+//   const touchEndX = e.changedTouches[0].clientX;
+//   const deltaX = touchEndX - touchStartX;
+//   const carousel = e.currentTarget.closest('.popup');
+//   const cardId = carousel.id.split('-')[2];
 
-  if (Math.abs(deltaX) > 50) {
-    deltaX > 0 ? prevImage(cardId) : nextImage(cardId);
-  }
-}
+//   if (Math.abs(deltaX) > 50) {
+//     deltaX > 0 ? prevImage(cardId) : nextImage(cardId);
+//   }
+// }
 
 function openCarousel(cardId) {
   const carouselInner = document.querySelector(`#carousel-popup-${cardId} .carousel-inner`);
