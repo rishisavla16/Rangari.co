@@ -1,0 +1,190 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "title": "Ayush Kolkata",
+            "primary": "685c3f6de967a_22_PAB0013-HDR.webp",
+            "images": [
+                "685c3f6de967a_22_PAB0013-HDR.webp",
+                "685c3f6dea8e0_15_PAB0063-HDR.webp"
+            ],
+            "description": "Ayush Kolkata"
+        },
+        {
+            "id": 2,
+            "title": "Bhushan Residence",
+            "primary": "685c42a597134__PAB0348-HDR.webp",
+            "images": [
+                "685c42a597134__PAB0348-HDR.webp",
+                "685c42b3871bf__PAB0223-HDR.webp",
+                "685c42b38803d__PAB0208-HDR.webp",
+                "685c42b388ca1__PAB0036-HDR.webp"
+            ],
+            "description": "Bhushan Residence"
+        },
+        {
+            "id": 3,
+            "title": "Curio Cottages",
+            "primary": "685c4848d5a08__PAB9489-HDR.webp",
+            "images": [
+                "685c4848d5a08__PAB9489-HDR.webp",
+                "685c48760e4c3__PAB9554-HDR.webp",
+                "685c48760f37b__PAB9499-HDR.webp",
+                "685c48760fc60__PAB9449-HDR.webp",
+                "685c48760fed0__PAB9419-HDR.webp",
+                "685c487610408__PAB9399-HDR.webp",
+                "685c487610c76__PAB9389-HDR.webp",
+                "685c487610f30__PAB9379-HDR.webp",
+                "685c4876111ec__PAB9364-HDR.webp",
+                "685c487611476__PAB9324-HDR.webp",
+                "685c487611a8a__PAB9319-HDR.webp"
+            ],
+            "description": "Curio Cottages"
+        },
+        {
+            "id": 4,
+            "title": "Dinesh Morwani",
+            "primary": "685c53c4a68aa__DSC0241.webp",
+            "images": [
+                "685c53c4a68aa__DSC0241.webp",
+                "685c53db79a93__DSC0235.webp",
+                "685c53db79e57__DSC0183 1.webp"
+            ],
+            "description": "Dinesh Morwani"
+        },
+        {
+            "id": 5,
+            "title": "Excella Experts FOAID 2023",
+            "primary": "685c5f3f5f822__PAB2243-HDR.webp",
+            "images": [
+                "685c5f3f5f822__PAB2243-HDR.webp",
+                "685c5f4b92266__PAB2459-HDR.webp",
+                "685c5f4b927e7__PAB2428-HDR.webp",
+                "685c5f4b92a3b__PAB2423-HDR.webp",
+                "685c5f4b92c8b__PAB2408-HDR.webp",
+                "685c5f4b92eac__PAB2393-HDR.webp",
+                "685c5f4b930b7__PAB2373-HDR.webp",
+                "685c5f4b932e6__PAB2348-HDR.webp",
+                "685c5f4b934fb__PAB2343-HDR.webp",
+                "685c5f4b9382a__PAB2338-HDR.webp",
+                "685c5f4b93c8f__PAB2333-HDR.webp",
+                "685c5f4b93f97__PAB2313-HDR.webp",
+                "685c5f4b94172__PAB2308-HDR.webp",
+                "685c5f4b942fb__PAB2298-HDR.webp"
+            ],
+            "description": "Excella Experts FOAID 2023"
+        },
+        {
+            "id": 7,
+            "title": "ICC Zelia Quadros",
+            "primary": "685c77a169adb__PAB3503-HDR.webp",
+            "images": [
+                "685c77a169adb__PAB3503-HDR.webp",
+                "685c77b4c0266__PAB3427-HDR.webp",
+                "685c77b4c0606__PAB3422-HDR.webp",
+                "685c77b4c0bf4__PAB3417-HDR.webp",
+                "685c77b4c0e6b__PAB3412-HDR.webp",
+                "685c77b4c1042__PAB3407-HDR.webp",
+                "685c77b4c120f__PAB3382-HDR.webp",
+                "685c77b4c13c5__PAB3377-HDR.webp",
+                "685c77b4c161f__PAB3337-HDR.webp",
+                "685c77b4c1875__PAB3327-HDR.webp",
+                "685c77b4c1a6d__PAB3302-HDR.webp",
+                "685c77b4c1c92__PAB3277-HDR.webp",
+                "685c77b4c2428__PAB3262-HDR.webp",
+                "685c77b4c2742__PAB3087-HDR.webp",
+                "685c77b4c2927__PAB3082-HDR.webp",
+                "685c77b4c2ab9__PAB2927-HDR.webp",
+                "685c77b4c2c40__PAB2912-HDR.webp"
+            ],
+            "description": "ICC Zelia Quadros"
+        },
+        {
+            "id": 8,
+            "title": "Mitun Varia One Avighna Park",
+            "primary": "685c7a822d04a_Open Atelier ASH_0168 Shot by Ashish Sahi.webp",
+            "images": [
+                "685c7a822d04a_Open Atelier ASH_0168 Shot by Ashish Sahi.webp",
+                "685c7ab8e845b_Open Atelier ASH_0035 Shot by Ashish Sahi.webp",
+                "685c7ab8e8ed4_Open Atelier ASH_0177 Shot by Ashish Sahi.webp",
+                "685c7ab8e9554_Open Atelier ASH_0185 Shot by Ashish Sahi.webp",
+                "685c7ab8e9910_Open Atelier ASH_0207 Shot by Ashish Sahi.webp"
+            ],
+            "description": "Mitun Varia One Avighna Park"
+        },
+        {
+            "id": 9,
+            "title": "Oberoi",
+            "primary": "685c7e4f7c727__PAB9103-HDR.webp",
+            "images": [
+                "685c7e60e037f__PAB9098-HDR.webp",
+                "685c7e4f7c727__PAB9103-HDR.webp",
+                "685c7e60e11ba__PAB9118-HDR.webp",
+                "685c7e60e1468__PAB9318-HDR.webp",
+                "685c7e60e1c3d__PAB9568-HDR.webp",
+                "685c7e60e1f3d__PAB9583-HDR.webp",
+                "685c7e60e2337__PAB9588-HDR.webp",
+                "685c7e60e25cb__PAB9608-HDR.webp",
+                "685c7e60e282d__PAB9618-HDR.webp",
+                "685c7e60e2a5f__PAB9633-HDR.webp",
+                "685c7e60e2ddc__PAB9643-HDR.webp",
+                "685c7e60e3085__PAB9663-HDR212.webp",
+                "685c7e60e32fb__PAB9730-HDR1.webp",
+                "685c7e60e3554__PAB9745-HDR.webp",
+                "685c7e60e37b8__PAB9750-HDR1.webp"
+            ],
+            "description": "Oberoi"
+        },
+        {
+            "id": 10,
+            "title": "Prestige Jasdan",
+            "primary": "685c816918fbf_20Terrace8700.webp",
+            "images": [
+                "685c816918fbf_20Terrace8700.webp",
+                "685c8175047c4_9Terrace8631.webp",
+                "685c817504af9_5Terrace8583.webp",
+                "685c817504f2c_4Terrace8581.webp",
+                "685c817506928_1Terrace8632.webp",
+                "685c817506f2a_21Terrace8706.webp"
+            ],
+            "description": "Prestige Jasdan"
+        },
+        {
+            "id": 11,
+            "title": "Soham Kolkata",
+            "primary": "685c81e83b6ba__PAB3076-HDR.webp",
+            "images": [
+                "685c81e83b6ba__PAB3076-HDR.webp",
+                "685c81f4f1d77__PAB3041-HDR.webp"
+            ],
+            "description": "Soham Kolkata"
+        },
+        {
+            "id": 12,
+            "title": "Yash Parekh",
+            "primary": "685c83d424586_C711_2024-08-17_042.webp",
+            "images": [
+                "685c83d424586_C711_2024-08-17_042.webp",
+                "685c83e6e8395_C711_2024-08-17_025P.webp",
+                "685c83e6e8743_C711_2024-08-17_187.webp",
+                "685c83e6e8b27_C711_2024-08-17_202.webp",
+                "685c83e6e8de4_C711_2024-08-17_217P (1).webp",
+                "685c83e6e9043_C711_2024-08-17_217P.webp",
+                "685c83e6e9279_C711_2024-08-17_229.webp",
+                "685c83e6e94f9_C711_2024-08-17_269.webp",
+                "685c83e6e9744_C711_2024-08-17_281P.webp"
+            ],
+            "description": "Yash Parekh"
+        },
+        {
+            "id": 13,
+            "title": "Excella Experts ii",
+            "primary": "685c98675e851_4SHOT 1-0545.webp",
+            "images": [
+                "685c98675e851_4SHOT 1-0545.webp",
+                "685c98c959608_3SHOT 1-9775.webp"
+            ],
+            "description": "Excella Experts ii"
+        }
+    ]
+}

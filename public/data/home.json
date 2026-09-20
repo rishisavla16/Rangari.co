@@ -1,0 +1,14 @@
+{
+  "title": "Welcome to Rangari",
+  "description": "Explore our collection of artworks and immerse yourself in the world of creativity.",
+  "carousel": [
+    {"image": "assets/images/home/68932666abeb5_20Terrace8700.webp", "alt": "Rangari project: Prestige Jasdan"},
+    {"image": "assets/images/home/689326593ff8d__PAB9103-HDR.webp", "alt": "Rangari project: Oberoi"},
+    {"image": "assets/images/home/6893264c55afc__PAB3503-HDR.webp", "alt": "Rangari project: ICC Zelia Quadros"},
+    {"image": "assets/images/home/6893263ebb7be__PAB2243-HDR.webp", "alt": "Rangari project: Excella Experts FOAID 2023"},
+    {"image": "assets/images/home/689326331b808__PAB9489-HDR.webp", "alt": "Rangari project: Curio Cottages"},
+    {"image": "assets/images/home/6893260a133f8_22_PAB0013-HDR.webp", "alt": "Rangari project: Ayush Kolkata"},
+    {"image": "assets/images/home/689326280883b__PAB0348-HDR.webp", "alt": "Rangari project: Bhushan Residence"},
+    {"image": "assets/images/home/68932678a33a2_C711_2024-08-17_025P.webp", "alt": "Rangari project: Yash Parekh"}
+  ]
+}

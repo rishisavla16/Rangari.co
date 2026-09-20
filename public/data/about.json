@@ -1,0 +1,10 @@
+{
+  "title": "Rangari.co",
+  "content": "Rangari.co is more than just a website—it's an evolving digital canvas built for artists, by artists. Designed with a strong focus on aesthetics, performance, and user experience, Rangari.co offers a professional yet deeply personal platform for creators to showcase their artwork in an intuitive and immersive environment. From stunning carousel displays to dynamic galleries that adapt seamlessly to every screen size, the site merges elegant design with powerful functionality. It serves not only as a visual archive of creativity but also as a living exhibition where each brushstroke, color choice, and concept has space to breathe.",
+  "carousel": [{
+    "image": "assets/images/about/685c8ef22cf7d_About1.webp",
+    "alt": "Bhavesh Davane",
+    "title": "Bhavesh Davane",
+    "description": "Bhavesh Davane is a multifaceted artist, interior designer, and professor based in India. As the founder of the creative platform Rangari, he has carved a unique space in the contemporary art scene by blending expressive visual storytelling with bold, immersive design. His work often explores themes of life, emotion, and identity, most notably showcased in his exhibition The Life. Through his Instagram presence, Bhavesh actively shares his artistic journey, curates exhibitions, and promotes public art under the #ArtByRangari movement. Passionate about nurturing creativity, he bridges academia and artistry, inspiring a new generation of artists through both his teachings and his vibrant, socially conscious works."
+  }]
+}
